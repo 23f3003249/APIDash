@@ -1,12 +1,9 @@
-import ApiDash from "@/components/custom/api-dash";
-import ResultSection from "@/components/custom/resultSection";
+import ApiDash from "@/components/custom/api-dash"
 
-//main app page
 export default function Dash() {
     return (
-        <div className="flex h-screen flex-col">
+        <div className="h-[calc(100vh-4rem)] min-h-0 overflow-hidden">
             <ApiDash />
-            <ResultSection />
         </div>
     )
-};
+}

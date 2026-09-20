@@ -49,12 +49,12 @@ export function NotFoundSpotlight({
       <motion.div
         ref={ref}
         onMouseMove={onMove}
-        className="relative isolate flex aspect-[16/9] w-full max-w-xl items-center justify-center overflow-hidden rounded-3xl border border-border bg-neutral-950"
+        className="relative isolate flex aspect-video w-full max-w-xl items-center justify-center overflow-hidden rounded-3xl border border-border bg-neutral-950"
       >
         {/* Dim base layer. */}
         <span
           aria-hidden
-          className="select-none font-bold leading-none tracking-tighter text-white/10 [font-size:clamp(5rem,16vw,10rem)]"
+          className="select-none font-bold leading-none tracking-tighter text-white/10 text-[clamp(5rem,16vw,10rem)]"
         >
           {code}
         </span>
@@ -63,7 +63,7 @@ export function NotFoundSpotlight({
           aria-label={code}
           style={enabled ? { WebkitMaskImage: mask, maskImage: mask } : undefined}
           className={cn(
-            "absolute select-none font-bold leading-none tracking-tighter text-white [font-size:clamp(5rem,16vw,10rem)]",
+            "absolute select-none font-bold leading-none tracking-tighter text-white text-[clamp(5rem,16vw,10rem)]",
             !enabled && "text-white/90",
           )}
         >
